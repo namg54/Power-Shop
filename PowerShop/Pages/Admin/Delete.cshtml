@@ -1,0 +1,33 @@
+﻿@page
+@model PowerShop.Pages.Admin.DeleteModel
+@{
+    ViewData["Title"] = "حذف کردن محصول";
+}
+<h1>حذف کردن محصول</h1>
+<form method="post">
+    <dl class="dl-horizontal">
+        <dd>
+            <label asp-for="Product.ProductName"></label>
+        </dd>
+        <dt>
+            <input asp-for="Product.ProductName" class="form-control"  readonly="readonly"/>
+            <span asp-validation-for="Product.ProductName"></span>
+        </dt>
+        <dd>
+            <label asp-for="Product.ProductDescription"></label>
+        </dd>
+        <dt>
+            <textarea asp-for="Product.ProductDescription" class="form-control" readonly="readonly"></textarea>
+            <span asp-validation-for="Product.ProductDescription"></span>
+        </dt>
+        <dd> <label>تصویر </label></dd>
+        <dt>
+            <img src="/images/@(Model.Product.ProductId).jpg" style="max-width: 200px"  />
+        </dt>
+        <dt>
+            <br/>
+            <input type="hidden" asp-for="Product.ProductId"/>
+            <input type="submit" value="حذف کردن" class="btn btn-danger"/>
+        </dt>
+    </dl>
+</form>

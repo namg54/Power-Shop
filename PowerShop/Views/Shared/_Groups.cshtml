@@ -1,0 +1,15 @@
+﻿@using PowerShop.Data.Repositories
+@inject IGroupRepository _groupRepository
+
+
+
+
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">گروه ها </a>
+    <div class="dropdown-menu" aria-labelledby="dropdown03">
+        @foreach (var item in _groupRepository.getAllCategories())
+        {
+            <a class="dropdown-item" href="/Group/@item.CategoryId/@item.CategoryName">@item.CategoryName</a>
+        }
+    </div>
+</li>

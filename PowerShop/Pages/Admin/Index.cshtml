@@ -1,0 +1,35 @@
+﻿@page
+@model PowerShop.Pages.Admin.IndexModel
+@{
+    ViewData["Title"] = "لیست کالا ها";
+}
+<h1>لیست کالا ها</h1>
+<hr />
+<p style="text-align:center"><a asp-page="Add" ><button asp-page="Add"  class="button1" >افزودن محصول</button></a>
+</p>
+<hr />
+<table>
+    <thead>
+        <tr>
+            <th>تصویر</th>
+            <th>نام کالا</th>
+            <th>قیمت کالا</th>
+            <th>دستورات</th>
+        </tr>
+    </thead>
+    <Tbody>
+        @foreach (var item in Model.Products)
+        {
+            <tr>
+
+                <td><img src="/images/@(item.ProductId).jpg" style="width: 200px" /></td>
+                <td>@item.ProductName</td>
+                <td>@item.Item.PriceItem</td>
+                <td>
+                    <a asp-page="Edit" asp-route-id="@item.ProductId">ویرایش</a>
+                    <a asp-page="Delete" asp-route-id="@item.ProductId">حذف</a>
+                </td>
+            </tr>
+        }
+    </Tbody>
+</table>

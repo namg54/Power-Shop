@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/css/Admin.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link href="~/lib/bootstrap4/css/bootstrap-rtl.css" rel="stylesheet" />
+</head>
+<body dir="rtl">
+    <header><a href="/">خانه</a></header>
+<div class="row">
+    <div class="col-md-2">
+        <nav>
+            <ul>
+                <li>
+                    <a class="nav-item">
+                        خانه
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="col-md-10">
+        <main>
+            @RenderBody()
+        </main>
+    </div>
+</div>
+@RenderSection("Scripts",false)
+</body>
+</html>

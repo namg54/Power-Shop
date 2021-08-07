@@ -1,0 +1,7 @@
+E:\c#\Asp.NetCoreTrnning\PowerShop\PowerShop\PowerShop\obj\Debug\netcoreapp3.0\PowerShop.csprojAssemblyReference.cache
+E:\c#\Asp.NetCoreTrnning\PowerShop\PowerShop\PowerShop\obj\Debug\netcoreapp3.0\PowerShop.AssemblyInfoInputs.cache
+E:\c#\Asp.NetCoreTrnning\PowerShop\PowerShop\PowerShop\obj\Debug\netcoreapp3.0\PowerShop.AssemblyInfo.cs
+E:\c#\Asp.NetCoreTrnning\PowerShop\PowerShop\PowerShop\obj\Debug\netcoreapp3.0\PowerShop.csproj.CoreCompileInputs.cache
+E:\c#\Asp.NetCoreTrnning\PowerShop\PowerShop\PowerShop\obj\Debug\netcoreapp3.0\PowerShop.MvcApplicationPartsAssemblyInfo.cache
+E:\c#\Asp.NetCoreTrnning\PowerShop\PowerShop\PowerShop\obj\Debug\netcoreapp3.0\PowerShop.RazorAssemblyInfo.cache
+E:\c#\Asp.NetCoreTrnning\PowerShop\PowerShop\PowerShop\obj\Debug\netcoreapp3.0\PowerShop.RazorAssemblyInfo.cs

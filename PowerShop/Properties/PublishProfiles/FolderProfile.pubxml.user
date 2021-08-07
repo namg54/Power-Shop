@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\wwwroot\PowerShop</_PublishTargetUrl>
+    <History>True|2021-06-02T09:27:36.2904541Z;True|2021-06-02T01:17:47.5695540+04:30;False|2021-06-02T01:17:02.4620795+04:30;True|2021-06-02T01:06:05.0192133+04:30;True|2021-06-02T00:10:18.5146168+04:30;True|2021-06-01T23:40:56.0528419+04:30;True|2021-06-01T23:37:35.6052462+04:30;True|2021-06-01T23:00:33.4879467+04:30;True|2021-06-01T22:02:05.5851336+04:30;True|2021-06-01T21:55:27.0459323+04:30;True|2021-06-01T19:33:40.7839093+04:30;True|2021-06-01T19:16:12.2349197+04:30;</History>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,36 @@
+﻿@model Order
+@{
+    ViewData["Title"] = "سبد خرید";
+}
+@if (Model != null)
+{
+    <table class="table table-striped">
+        <thead class="thead-dark">
+        <tr>
+            <th>کالا</th>
+            <th>تعداد</th>
+            <th>قیمت</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in Model.OrderDetails)
+        {
+            <tr>
+                <td>@item.Product.ProductName</td>
+                <td>@item.Count</td>
+                <td>@(item.Count*item.price)</td>
+                <td><a asp-action="RemoveCart" asp-route-detailId="@item.DetailId">حذف</a></td>
+            </tr>
+        }
+        </tbody>
+    </table>
+    <h5>جمع کل قیمت:@Model.OrderDetails.Sum(s=>s.Count * s.price)</h5>
+    <p>
+        <a class="btn btn-success" asp-action="Payment">پرداخت</a>
+    </p>
+}
+else
+{
+    <div class="alert-danger">فاکتوری موجود نمی باشد</div>
+}
